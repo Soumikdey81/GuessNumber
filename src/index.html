@@ -9,30 +9,32 @@
   <body>
     <main class="min-h-screen w-screen bg-black p-2 box-border m-0">
       <div class="w-full flex justify-between">
-        <button class="again my-4 py-2 px-4 font-bold text-black bg-slate-400">
+        <button class="again py-2 px-4 font-bold text-black bg-slate-400">
           Again!
         </button>
         <p class="text-white font-bold">&lt;Between 1 and 20&gt;</p>
       </div>
       <div class="w-full mt-5">
-        <h1 class="text-white text-center text-4xl font-bold">
+        <h1 class="text-white text-center text-2xl md:text-4xl font-bold">
           Guess My Number!
         </h1>
       </div>
       <div class="flex justify-center items-center mt-10 relative">
         <div
-          class="flex justify-center items-center w-auto px-10 aspect-square bg-white z-10"
+          class="flex justify-center items-center w-16 md:w-32 p-10 aspect-square bg-white z-10"
         >
-          <p class="number text-5xl font-bold">?</p>
+          <p class="number text-xl md:text-4xl font-bold">?</p>
         </div>
         <hr class="h-1 w-full bg-white absolute" />
       </div>
-      <div class="flex flex-row justify-between my-20">
-        <div class="basis-1/2 flex flex-col justify-center items-center">
+      <div class="flex flex-col md:flex-row justify-between my-20">
+        <div
+          class="basis-1/2 mb-20 md:mb-0 flex flex-col justify-center items-center"
+        >
           <div class="w-2/4 aspect-[3/1] border-4 border-white">
             <input
               type="text"
-              class="guess w-full h-full bg-black text-white text-5xl text-center"
+              class="guess p-2 w-full h-full bg-black text-white text-xl md:text-4xl text-center"
             />
           </div>
           <button class="check my-4 py-2 px-4 font-bold text-black bg-white">
@@ -40,14 +42,16 @@
           </button>
         </div>
         <div class="basis-1/2 flex flex-col items-center text-white font-bold">
-          <div class="w-1/3 aspect-[3/1]">
-            <p class="message text-2xl">Start guessing...</p>
-          </div>
-          <div class="w-1/3 aspect-[3/1]">
-            <p class="mb-2">
-              <span class="mr-2">❤️ Score:</span><span class="score">20</span>
-            </p>
-            <p><span>🥇 Highscore: </span><span class="highScore">0</span></p>
+          <div>
+            <div class="mb-5 md:mb-10">
+              <p class="message text-xl md:text-2xl">Start guessing...</p>
+            </div>
+            <div class="">
+              <p class="mb-2">
+                <span class="mr-2">❤️ Score:</span><span class="score">20</span>
+              </p>
+              <p><span>🥇 Highscore: </span><span class="highScore">0</span></p>
+            </div>
           </div>
         </div>
       </div>
